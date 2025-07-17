@@ -1,21 +1,8 @@
 body{
     --test-border:2px solid black;
+    --margin-all:0px 80px;
 }
 
-.project-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    gap: 20px;
-    padding: 0px 30px 0px 30px;
-}
-
-.project{
-    height: 300px;
-    width: 100%;
-    background-color: red;
-    justify-self: center;
-    border: 1px solid black;
-}
 
 /* header */
 
@@ -23,18 +10,17 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: var(--margin-all);
     border:var(--test-border);
-    padding: 0px 75px;
 }
 
 .header-image-container img{
-    width: 300px;
+    width: 500px;
 }
 
 .about-me-container{
-    font-size: 1.2em;
-    line-height: 25px;
+    font-size: 1.5em;
+    line-height: 30px;
     border: var(--test-border);
     padding: 30px;
 }
@@ -47,4 +33,23 @@ header{
 
 .social-logos img{
     width: 25px;
+}
+
+/* main */
+main{
+    margin:var(--margin-all);
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.project{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+    justify-self: center;
+    border: 1px solid black;
 }
