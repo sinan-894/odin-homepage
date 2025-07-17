@@ -1,3 +1,7 @@
+body{
+    --test-border:2px solid black;
+}
+
 .project-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -11,4 +15,36 @@
     background-color: red;
     justify-self: center;
     border: 1px solid black;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border:var(--test-border);
+    padding: 0px 75px;
+}
+
+.header-image-container img{
+    width: 300px;
+}
+
+.about-me-container{
+    font-size: 1.2em;
+    line-height: 25px;
+    border: var(--test-border);
+    padding: 30px;
+}
+.social-logos{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+.social-logos img{
+    width: 25px;
 }
