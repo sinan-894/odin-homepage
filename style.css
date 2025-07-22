@@ -1,6 +1,6 @@
 body{
     --test-border:0px solid black;
-    --margin-all:0px 80px;
+    --margin-all-side:150px;
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
@@ -37,7 +37,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 100px;
+    margin: 100px var(--margin-all-side);
     border:var(--test-border);
     /* flex-wrap: wrap; */
 }
@@ -81,13 +81,12 @@ header{
     border: var(--test-border);
     box-shadow: 0px 0.01em 1em black;
     padding: 30px;
-    max-width: 600px;
     background-color: aliceblue;
 }
 
 .about-me-container h2{
     font-weight: 500;
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 .about-me-container p{
@@ -106,9 +105,7 @@ header{
 
 /* main */
 main{
-    margin:var(--margin-all);
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin:60px var(--margin-all-side);
 }
 
 .project-container{
@@ -209,7 +206,7 @@ footer{
 
 @media (max-width:600px){
     body{
-        --margin-all:0px 20px;
+        --margin-all-side:50px;
     }
 
     .project-container{
@@ -230,7 +227,7 @@ footer{
 
 @media (min-width:600px) and (max-width:1200px){
     body{
-        --margin-all:0px 40px;
+        --margin-all-side:100px;
     }
     .header-container{
         display: block;
@@ -242,10 +239,14 @@ footer{
         
     }
 
+    .captain-name{
+        transform: translate(-80px,-170px);
+    }
+
     .header-image-container img{
         position: relative;
         right: 70px;
-        bottom: 30px;
+        bottom:50px;
         width: 250px;
 
     }
