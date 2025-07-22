@@ -209,13 +209,28 @@ footer{
         --margin-all-side:50px;
     }
 
+    header{
+        margin: 50px var(--margin-all-side);
+    }
+
+    .header-container{
+        flex-wrap: wrap;
+    }
+    .captain-name{
+        transform: translateY(-110px);
+    }
+    .social-logos{
+        justify-content: center;
+    }
+
+
     .project-container{
         grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
         gap: 20px;
     }
 
     .header-image-container img{
-        max-width: min(100%,550px);
+        max-width: min(100%,500px);
     }
     footer{
         justify-content: center;
