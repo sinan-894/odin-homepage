@@ -232,7 +232,7 @@ footer{
     background-color: var(--theme-color);
     color: white;
     display: flex;
-    /* gap: 50px; */
+    gap: 40px;
     justify-content: space-between;
     padding: 50px var(--margin-all-side);
 }
@@ -247,7 +247,7 @@ footer{
 }
 
 .contact-me-container h1{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
 }
 
@@ -282,3 +282,30 @@ footer{
     max-width: 100%;
 }
 
+
+@media (max-width:600px){
+    footer{
+        flex-wrap: wrap;
+        padding: 0px;
+        justify-content: center;
+
+    }
+    .footer-image-container img{
+        height: 100%;
+    }
+
+    .contact-me-container{
+        padding: var(--margin-all-side);
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .contact-me-container h1{
+        text-align: center;
+    }
+
+    .contact-logo{
+        justify-content: center;
+    }
+    
+}
