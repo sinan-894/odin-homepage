@@ -1,6 +1,7 @@
 body{
     --test-border:0px solid black;
     --margin-all-side:150px;
+    --theme-color:#BF0A19;
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
@@ -47,7 +48,7 @@ header{
     width: 100%;
     z-index: -1;
     height: 600px;
-    background-color: #BF0A19;
+    background-color: var(--theme-color);
     transform: skewY(-10deg);
     
 }
@@ -193,7 +194,7 @@ main{
 .project-image-container{
     height: 260px;
     width: 100%;
-    background-color: red;
+    background-color: var(--theme-color);
 }
 
 .project-content{
@@ -228,13 +229,12 @@ main{
 
 footer{
     --logo-width:20px;
-    background-color: blue;
+    background-color: var(--theme-color);
     color: white;
     display: flex;
-    font-size: 1.5em;
     /* gap: 50px; */
-    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 50px var(--margin-all-side);
 }
 
 .phone-number img,.email img{
@@ -243,7 +243,16 @@ footer{
 }
 
 .contact-me-container{
-    max-width:300px;
+    max-width:350px;
+}
+
+.contact-me-container h1{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.contact-me-container p{
+    font-size: 1.3em;
 }
 
 .contact-me-container > *{
@@ -262,12 +271,11 @@ footer{
 }
 
 .contact-logo img{
-    width: 40px;
+    width: 30px;
 }
 
 .footer-image-container{
-    flex: 1 1 300px;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .footer-image-container img{
