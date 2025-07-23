@@ -248,6 +248,7 @@ footer{
     display: flex;
     gap: 40px;
     justify-content: space-between;
+    align-items: center;
     padding: 50px var(--margin-all-side);
 }
 
@@ -305,6 +306,7 @@ footer{
 
     }
     .footer-image-container img{
+        object-fit: cover;
         height: 100%;
     }
 
@@ -322,4 +324,10 @@ footer{
         justify-content: center;
     }
     
+}
+
+@media (min-width:600px) and (max-width:950px){
+    .footer-image-container img{
+        max-width: 250px;
+    }
 }
