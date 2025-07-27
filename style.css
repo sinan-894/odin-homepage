@@ -2,6 +2,7 @@ body{
     --test-border:0px solid black;
     --margin-all-side:150px;
     --theme-color:#BF0A19;
+    --transition-time:500ms;
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
@@ -72,9 +73,9 @@ header{
     width: 100%;
     transform: translateY(-60px);
     position: absolute;
-    color: wheat;
     font-size: 2.5em;
     text-align: center;
+    color: white;
 }
 
 .about-me-container{
@@ -134,17 +135,14 @@ header{
     }
 
 
-    .project-container{
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        gap: 20px;
-    }
+
 
     .header-image-container img{
-        max-width: min(100%,400px);
-    }
+        max-width: 300px;
     
-}
+    }
 
+}
 
 
 @media (min-width:600px) and (max-width:1200px){
@@ -156,7 +154,7 @@ header{
     }
     .header-image-container{
         float: left;
-        height: auto;
+        height: 400px;
         width: 200px;    
         
     }
@@ -169,7 +167,7 @@ header{
         position: relative;
         right: 70px;
         bottom:50px;
-        width: 250px;
+        max-width: 250px;
 
     }
 }
@@ -189,6 +187,15 @@ main{
     justify-self: center;
     box-shadow: 0px 0.01em 1em black;
     /* border: 1px solid black; */
+    
+}
+
+.scale-on-hover{
+    transition: transform var(--transition-time) ease-out;
+}
+
+.scale-on-hover:hover{
+    transform: scale(1.1);
 }
 
 .project-image-container{
@@ -234,6 +241,11 @@ main{
 @media (max-width:600px){
     main h1{
         text-align: center;
+    }
+
+    .project-container{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
     }
 }
 
